@@ -1,4 +1,5 @@
 // Write your JavaScript code here!
+const { myFetch } = require("./scriptHelper");
 
 window.addEventListener("load", function () {
     const form = document.querySelector("form");
@@ -23,8 +24,8 @@ window.addEventListener("load", function () {
                 fuelLevel: fuelLevel.value,
                 cargoLevel: cargoMass.value
             };
-            event.preventDefault();
             formSubmission(window.document,faultyItems,response.pilot,response.copilot,response.fuelLevel,response.cargoLevel);
+            event.preventDefault();
         }
     });
 
